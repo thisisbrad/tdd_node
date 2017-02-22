@@ -4,7 +4,8 @@
   "description": "Mocha | Chai",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*.spec.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
     "mocha": "^3.2.0"
   },
   "devDependencies": {
-    "co-mocha": "^1.2.0"
+    "chai": "^3.5.0",
+    "co-fs": "^1.2.0",
+    "co-mocha": "^1.2.0",
+    "nodemon": "^1.11.0"
   }
 }
